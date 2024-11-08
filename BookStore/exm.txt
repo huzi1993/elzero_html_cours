@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="descreption" content="This is the bla bla bla lesson" />
+    <title>Entities lesson</title>
+  </head>
+  <body>
+    <div>
+      <h1>bla bla bla Lesson</h1>
+      <p>This İS bla bla bla Lesson</p>
+    </div>
+  </body>
+</html>
