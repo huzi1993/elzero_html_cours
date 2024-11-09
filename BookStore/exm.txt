@@ -8,7 +8,7 @@
   <body>
     <div>
       <h1>bla bla bla Lesson</h1>
-      <p>This İS bla bla bla Lesson</p>
+      <p>This İs bla bla bla Lesson</p>
     </div>
   </body>
 </html>
