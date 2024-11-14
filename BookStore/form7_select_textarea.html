@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="descreption" content="This is the Select and Textarea lesson" />
+    <title>Select and Textarea</title>
+  </head>
+  <body>
+    <div>
+      <h1>Select and Textarea Lesson</h1>
+      <p>This İs Select and Textarea Lesson</p>
+    </div>
+    <form action="" method="GET">
+      <!--
+      <input type="hidden" value="Huzeyfe" />
+      <div>
+        <label>Userame: </label>
+        <input
+          type="text"
+          required="required"
+          placeholder="Userame"
+          name="user"
+          value="Huzeyfe"
+          readonly
+        />
+      </div>
+      <br />
+      <div>
+        <label>Anything: </label>
+        <input type="text" name="any" autofocus />
+      </div>
+      <br />
+      <div>
+        <label>Password: </label>
+        <input
+          type="password"
+          required
+          placeholder="Write A Complex Password"
+          name="pass"
+          minlength="8"
+          maxlength="20"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email: </label>
+        <input
+          type="email"
+          required
+          placeholder="Write A Valid Email"
+          value="huzeyfe@gmail.com"
+          name="email"
+          disabled
+        />
+      </div>
+      <div>
+        <label>Color: </label>
+        <input type="color" name="color" />
+      </div>
+      <div>
+        <label>Range: </label>
+        <input
+          type="range"
+          required
+          name="range"
+          min="0"
+          max="100"
+          step="30"
+          value="30"
+        />
+      </div>
+      <div>
+        <label>Number: </label>
+        <input type="number" name="number" min="10" max="100" step="10" />
+      </div>
+      -->
+      <label for="book">Choose Book: </label>
+      <select name="book" id="book" multiple>
+        <optgroup label="Romantic Books">
+          <option value="1">Book 1</option>
+          <option value="2">Book 2</option>
+          <option value="3" selected>Book 3</option>
+        </optgroup>
+        <optgroup label="Police Books">
+          <option value="4">Book 4</option>
+          <option value="5">Book 5</option>
+          <option value="6">Book 6</option>
+        </optgroup>
+      </select>
+      <hr />
+      <textarea
+        name="subject"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Test Text"
+      >
+      </textarea>
+      <hr />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>
