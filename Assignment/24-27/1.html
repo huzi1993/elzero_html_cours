@@ -1,0 +1,67 @@
+!
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="İnput Assignment" />
+    <title>İnput Assignment</title>
+  </head>
+  <body>
+    <form action="test.py" method="post" target="_blank">
+      <!-- Hidden field -->
+      <input type="hidden" name="hidden_field" value="12345" />
+
+      <!-- Username field -->
+      <label for="user">Username: </label>
+      <br />
+      <input
+        type="text"
+        name="username"
+        id="user"
+        required
+        placeholder="Enter Your Username"
+      />
+      <hr />
+      <!-- Username field -->
+      <label for="pass">Password: </label>
+      <br />
+      <input
+        type="password"
+        name="password"
+        id="pass"
+        placeholder="Enter Your Password"
+      />
+      <hr />
+      <!-- Phone Number field -->
+      <label for="mob">Mobile: </label>
+      <br />
+      <input
+        type="tel"
+        name="mobile"
+        id="mob"
+        placeholder="+20100 (234) 123"
+        pattern="\+?\d{1,4}\s?\(?\d{1,4}\)?\s?\d{3,}"
+      />
+      <hr />
+      <!-- Email field -->
+      <label for="mail">Email: </label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="mail"
+        required
+        placeholder="Enter a valid email address"
+      />
+      <hr />
+      <label for="sub">Subject: </label>
+      <br />
+      <input type="text" name="Subject" id="sub" placeholder="Write Anything" />
+      <hr />
+      <input type="submit" value="Save Data" />
+      <input type="reset" value="Empty Form" />
+    </form>
+  </body>
+</html>
