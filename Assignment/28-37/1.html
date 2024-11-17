@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="3. week assignments - 28 to 30" />
+    <title>Form Example</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter Username"
+        autofocus
+        minlength="5"
+        maxlength="20"
+        required
+      />
+      <hr />
+
+      <!-- E-Mail -->
+      <label for="mail">E-Mail:</label>
+      <br />
+      <input
+        type="email"
+        id="mail"
+        name="email"
+        placeholder="Enter your email address"
+        value="o@o.com"
+        readonly
+      />
+      <hr />
+
+      <!-- Token -->
+      <input
+        type="hidden"
+        id="tok"
+        name="token"
+        value="b92f1fc2fce391ad7af633723afd3055"
+      />
+      <hr />
+
+      <!-- Skills (Checkbox) -->
+      <div class="checkbox-input">
+        <h3>Skills:</h3>
+        <input type="checkbox" id="skill1" name="skills[]" value="Planning" />
+        <label for="skill1">Planning</label>
+        <br />
+        <input type="checkbox" id="skill2" name="skills[]" value="Analysis" />
+        <label for="skill2">Analysis</label>
+        <br />
+        <input
+          type="checkbox"
+          id="skill3"
+          name="skills[]"
+          value="Advanced Search"
+        />
+        <label for="skill3">Advanced Search</label>
+        <br />
+        <input
+          type="checkbox"
+          id="skill4"
+          name="skills[]"
+          value="Logical Thinking"
+          checked
+        />
+        <label for="skill4">Logical Thinking</label>
+        <br />
+        <input
+          type="checkbox"
+          id="skill5"
+          name="skills[]"
+          value="Problem Solving"
+        />
+        <label for="skill5">Problem Solving</label>
+        <hr />
+      </div>
+
+      <!-- Job (Radio) -->
+      <div class="radio-input">
+        <h3>Job:</h3>
+        <input type="radio" id="front" name="job" value="Front-End Developer" />
+        <label for="front">Front-End Developer</label>
+        <br />
+        <input
+          type="radio"
+          id="back"
+          name="job"
+          value="Back-End Developer"
+          checked
+        />
+        <label for="back">Back-End Developer</label>
+        <br />
+        <input type="radio" id="business" name="job" value="Business Analyst" />
+        <label for="business">Business Analyst</label>
+        <br />
+        <input type="radio" id="mang" name="job" value="Project Manager" />
+        <label for="mang">Project Manager</label>
+        <br />
+        <input type="radio" id="scrum" name="job" value="Scrum Master" />
+        <label for="scrum">Scrum Master</label>
+        <hr />
+      </div>
+      <div>
+        <label for="lang">Choose Book:</label>
+        <select name="language" id="lang">
+          <optgroup label="PHP">
+            <option value="1">V5.0</option>
+            <option value="2">V7.0</option>
+            <option value="3">V8.0</option>
+          </optgroup>
+
+          <optgroup label="Python">
+            <option value="4">V2.0</option>
+            <option value="5">V3.0</option>
+            <option value="6">V3.9</option>
+          </optgroup>
+        </select>
+        <hr />
+        <textarea
+          name="brief"
+          id="brief"
+          placeholder="Write Here Why You Want To Learn Programming"
+          rows="10"
+          cols="50"
+        ></textarea>
+        <hr />
+      </div>
+      <!-- Buttons -->
+      <div class="buttons">
+        <input type="submit" value="Send" />
+        <input type="reset" value="Empty" />
+      </div>
+    </form>
+  </body>
+</html>
